@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Box, Container, Typography, Grid, Paper } from '@mui/material';
+import { Box, Container, Typography, Paper, Grid } from '@mui/material';
 import { LocalShipping, Route, Videocam, Speed } from '@mui/icons-material';
 import { useLanguage } from '../context/language-context';
 

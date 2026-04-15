@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { useLanguage } from '../context/language-context';
+import Slider from 'react-slick';
+import { galleryImages } from '../data/gallery-images';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -11,6 +13,19 @@ export function HeroSection() {
       top: window.innerHeight,
       behavior: 'smooth'
     });
+  };
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    arrows: false,
+    pauseOnHover: false,
   };
 
   return (
@@ -23,23 +38,33 @@ export function HeroSection() {
         bgcolor: 'black',
       }}
     >
-      {/* Background Image */}
+      {/* Background Carousel */}
       <Box
         sx={{
           position: 'absolute',
           inset: 0,
+          '& .slick-slider, & .slick-list, & .slick-track, & .slick-slide > div': {
+            height: '100%',
+          },
         }}
       >
-        <ImageWithFallback
-          src="https://cdn.discordapp.com/attachments/1284188314714247231/1493990721722650827/ets2_20260405_212752_00.png?ex=69e0fac9&is=69dfa949&hm=b1d4868877718b7dc3d8a15e969cba96e692312cab5a2eee560c972909b1cd80&animated=true"
-          alt="Baron Performance"
-          className="w-full h-full object-cover opacity-40"
-        />
+        <Slider {...sliderSettings}>
+          {galleryImages.map((image, index) => (
+            <Box key={index} sx={{ height: '100%', position: 'relative' }}>
+              <ImageWithFallback
+                src={image.url}
+                alt={image.alt}
+                className="w-full h-full object-cover opacity-40"
+              />
+            </Box>
+          ))}
+        </Slider>
         <Box
           sx={{
             position: 'absolute',
             inset: 0,
             background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(0,0,0,1))',
+            pointerEvents: 'none',
           }}
         />
       </Box>

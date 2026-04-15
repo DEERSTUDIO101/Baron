@@ -6,6 +6,8 @@ import { Footer } from './components/footer';
 import { LanguageSwitcher } from './components/language-switcher';
 import { LanguageProvider } from './context/language-context';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const darkTheme = createTheme({
   palette: {

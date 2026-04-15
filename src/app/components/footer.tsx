@@ -66,6 +66,23 @@ export function Footer() {
                 TikTok
               </Link>
             </motion.div>
+            <motion.div whileHover={{ y: -2 }}>
+              <Link
+                href="https://discord.gg/FfAzvMNd3c"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  color: '#9ca3af',
+                  textDecoration: 'none',
+                  transition: 'color 0.3s',
+                  '&:hover': {
+                    color: '#dc2626',
+                  },
+                }}
+              >
+                {t('footer.discord')}
+              </Link>
+            </motion.div>
           </Box>
 
           <Divider sx={{ borderColor: 'rgba(63, 63, 70, 1)', mb: 3 }} />

@@ -12,7 +12,7 @@ const translations = {
   de: {
     // Hero Section
     'hero.title1': 'BARON',
-    'hero.title2': 'PERFORMANCE',
+    'hero.title2': 'PERFORMANZE',
     'hero.subtitle': 'Deine tägliche Dosis Euro Truck Simulator 2',
     'hero.followButton': 'Folge uns auf TikTok',
     'hero.learnMore': 'Mehr erfahren',
@@ -20,9 +20,18 @@ const translations = {
     // Gallery Section
     'gallery.title': 'Auf der Straße',
     'gallery.subtitle': 'Einblicke in meine Touren quer durch Europa',
+    'gallery.filter.all': 'Alle',
+    'gallery.filter.gameplay': 'Gameplay',
+    'gallery.filter.trucks': 'Trucks',
+    'gallery.filter.routes': 'Routen',
+    'gallery.filter.night': 'Nacht',
+    'gallery.stats.images': 'Bilder',
+    'gallery.stats.kilometers': 'Kilometer',
+    'gallery.stats.countries': 'Länder',
+    'gallery.stats.tours': 'Touren',
     
     // Features Section
-    'features.title': 'Warum Baron Performance?',
+    'features.title': 'Warum Baron Performanze?',
     'features.subtitle': 'Mehr als nur Truck-Simulator - eine Leidenschaft für die Straße',
     'features.realistic.title': 'Realistische Touren',
     'features.realistic.desc': 'Authentische Frachten quer durch Europa mit realistischer Simulation',
@@ -35,17 +44,18 @@ const translations = {
     
     // CTA Section
     'cta.title': 'Bereit für die nächste Tour?',
-    'cta.subtitle': 'Komm mit auf die Straße! Verpasse keine meiner ETS2-Touren mehr und folge Baron Performance auf TikTok!',
+    'cta.subtitle': 'Komm mit auf die Straße! Verpasse keine meiner ETS2-Touren mehr und folge Baron Performanze auf TikTok!',
     'cta.button': 'Jetzt folgen',
     
     // Footer
-    'footer.subtitle': 'Euro Truck Simulator 2 • Content Creator',
-    'footer.copyright': '© 2026 Baron Performance. Alle Rechte vorbehalten.',
+    'footer.subtitle': 'Euro Truck Simulator 2 • Virtuelle LKW Firma',
+    'footer.copyright': '© 2026 Baron Performanze. Alle Rechte vorbehalten.',
+    'footer.discord': 'Discord',
   },
   en: {
     // Hero Section
     'hero.title1': 'BARON',
-    'hero.title2': 'PERFORMANCE',
+    'hero.title2': 'PERFORMANzE',
     'hero.subtitle': 'Your daily dose of Euro Truck Simulator 2',
     'hero.followButton': 'Follow us on TikTok',
     'hero.learnMore': 'Learn more',
@@ -53,9 +63,18 @@ const translations = {
     // Gallery Section
     'gallery.title': 'On the Road',
     'gallery.subtitle': 'Insights into my tours across Europe',
+    'gallery.filter.all': 'All',
+    'gallery.filter.gameplay': 'Gameplay',
+    'gallery.filter.trucks': 'Trucks',
+    'gallery.filter.routes': 'Routes',
+    'gallery.filter.night': 'Night',
+    'gallery.stats.images': 'Images',
+    'gallery.stats.kilometers': 'Kilometers',
+    'gallery.stats.countries': 'Countries',
+    'gallery.stats.tours': 'Tours',
     
     // Features Section
-    'features.title': 'Why Baron Performance?',
+    'features.title': 'Why Baron Performanze?',
     'features.subtitle': 'More than just a truck simulator - a passion for the road',
     'features.realistic.title': 'Realistic Tours',
     'features.realistic.desc': 'Authentic cargo across Europe with realistic simulation',
@@ -68,12 +87,13 @@ const translations = {
     
     // CTA Section
     'cta.title': 'Ready for the Next Tour?',
-    'cta.subtitle': 'Join me on the road! Don\'t miss any of my ETS2 tours and follow Baron Performance on TikTok!',
+    'cta.subtitle': 'Join me on the road! Don\'t miss any of my ETS2 tours and follow Baron Performanze on TikTok!',
     'cta.button': 'Follow Now',
     
     // Footer
-    'footer.subtitle': 'Euro Truck Simulator 2 • Content Creator',
-    'footer.copyright': '© 2026 Baron Performance. All rights reserved.',
+    'footer.subtitle': 'Euro Truck Simulator 2 • Virtuell Truck Company',
+    'footer.copyright': '© 2026 Baron Performanze. All rights reserved.',
+    'footer.discord': 'Discord',
   },
 };
 
