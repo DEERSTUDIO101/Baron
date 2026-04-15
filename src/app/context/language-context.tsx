@@ -55,7 +55,7 @@ const translations = {
   en: {
     // Hero Section
     'hero.title1': 'BARON',
-    'hero.title2': 'PERFORMANzE',
+    'hero.title2': 'PERFORMANZE',
     'hero.subtitle': 'Your daily dose of Euro Truck Simulator 2',
     'hero.followButton': 'Follow us on TikTok',
     'hero.learnMore': 'Learn more',
