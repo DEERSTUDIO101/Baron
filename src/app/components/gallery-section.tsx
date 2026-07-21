@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Box, Container, Typography, Card, Chip, Stack, Grid } from '@mui/material';
 import { useLanguage } from '../context/language-context';
 import { galleryImages, categories } from '../data/gallery-images';
+import { optimizeImage } from '../lib/optimize-image';
 
 export function GallerySection() {
   const { t } = useLanguage();
@@ -128,8 +129,9 @@ export function GallerySection() {
                       >
                         <Box sx={{ position: 'relative', paddingTop: '75%' }}>
                           <ImageWithFallback
-                            src={image.url}
+                            src={optimizeImage(image.url, 600)}
                             alt={image.alt}
+                            loading={index < 4 ? 'eager' : 'lazy'}
                             style={{
                               position: 'absolute',
                               top: 0,
