@@ -68,7 +68,7 @@ export function Footer() {
             </motion.div>
             <motion.div whileHover={{ y: -2 }}>
               <Link
-                href="https://discord.gg/FfAzvMNd3c"
+                href="https://discord.gg/SyhRJMTbyc"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
