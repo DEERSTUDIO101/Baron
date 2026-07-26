@@ -1,7 +1,7 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { motion } from 'motion/react';
-import { Box, Container, Typography, Button, Stack } from '@mui/material';
-import { KeyboardArrowDown } from '@mui/icons-material';
+import { Box, Container, Typography, Button, Stack, Chip } from '@mui/material';
+import { KeyboardArrowDown, Handshake } from '@mui/icons-material';
 import { useLanguage } from '../context/language-context';
 import Slider from 'react-slick';
 import { galleryImages } from '../data/gallery-images';
@@ -13,6 +13,13 @@ export function HeroSection() {
       top: window.innerHeight,
       behavior: 'smooth'
     });
+  };
+
+  const scrollToPartners = () => {
+    const el = document.getElementById('partners');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const sliderSettings = {
@@ -88,6 +95,32 @@ export function HeroSection() {
           transition={{ duration: 1, ease: 'easeOut' }}
         >
           <Box sx={{ textAlign: 'center' }}>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+            >
+              <Chip
+                icon={<Handshake sx={{ color: '#dc2626 !important' }} />}
+                label={t('hero.partnershipBadge')}
+                onClick={scrollToPartners}
+                clickable
+                sx={{
+                  bgcolor: 'rgba(220, 38, 38, 0.12)',
+                  border: '1px solid rgba(220, 38, 38, 0.5)',
+                  color: 'white',
+                  fontWeight: 600,
+                  mb: 3,
+                  px: 1.5,
+                  py: 2.5,
+                  fontSize: '0.95rem',
+                  '&:hover': {
+                    bgcolor: 'rgba(220, 38, 38, 0.2)',
+                  },
+                }}
+              />
+            </motion.div>
+
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

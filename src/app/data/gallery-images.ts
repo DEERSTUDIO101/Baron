@@ -74,6 +74,21 @@ export const galleryImages = [
     alt: "ETS2 Screenshot",
     category: "gameplay"
   },
+  {
+    url: "/gallery/B16.jpg",
+    alt: "ETS2 Tour Juli 2026",
+    category: "trucks"
+  },
+  {
+    url: "/gallery/B17.png",
+    alt: "ETS2 Highlight Juli 2026",
+    category: "gameplay"
+  },
+  {
+    url: "/gallery/B18.jpg",
+    alt: "ETS2 Tour Snapshot",
+    category: "gameplay"
+  },
 ];
 
 export const categories = ['all', 'gameplay', 'trucks', 'night'];

@@ -16,6 +16,7 @@ const translations = {
     'hero.subtitle': 'Deine tägliche Dosis Euro Truck Simulator 2',
     'hero.followButton': 'Folge uns auf TikTok',
     'hero.learnMore': 'Mehr erfahren',
+    'hero.partnershipBadge': '🤝 Neue Partnerschaft mit Zehl Transporte',
     
     // Gallery Section
     'gallery.title': 'Auf der Straße',
@@ -41,7 +42,13 @@ const translations = {
     'features.content.desc': 'Regelmäßige Videos und Highlights von meinen Trucking-Abenteuern',
     'features.skill.title': 'Skill & Präzision',
     'features.skill.desc': 'Perfekte Manöver, enge Kurven und meisterhafte Parkjobs',
-    
+
+    // Partners Section
+    'partners.newBadge': 'Neue Partnerschaft',
+    'partners.title': 'Unsere Partnerschaft',
+    'partners.subtitle': 'Gemeinsam stärker auf der Straße',
+    'partners.description': 'Baron Performanze und Zehl Transporte gehen gemeinsame Wege - als BP & ZT Group liefern wir noch mehr spannende Touren, Content und Zusammenarbeit quer durch Europa.',
+
     // CTA Section
     'cta.title': 'Bereit für die nächste Tour?',
     'cta.subtitle': 'Komm mit auf die Straße! Verpasse keine meiner ETS2-Touren mehr und folge Baron Performanze auf TikTok!',
@@ -59,6 +66,7 @@ const translations = {
     'hero.subtitle': 'Your daily dose of Euro Truck Simulator 2',
     'hero.followButton': 'Follow us on TikTok',
     'hero.learnMore': 'Learn more',
+    'hero.partnershipBadge': '🤝 New Partnership with Zehl Transporte',
     
     // Gallery Section
     'gallery.title': 'On the Road',
@@ -84,7 +92,13 @@ const translations = {
     'features.content.desc': 'Regular videos and highlights from my trucking adventures',
     'features.skill.title': 'Skill & Precision',
     'features.skill.desc': 'Perfect maneuvers, tight turns and masterful parking jobs',
-    
+
+    // Partners Section
+    'partners.newBadge': 'New Partnership',
+    'partners.title': 'Our Partnership',
+    'partners.subtitle': 'Stronger together on the road',
+    'partners.description': 'Baron Performanze and Zehl Transporte are joining forces - as BP & ZT Group we deliver even more exciting tours, content and collaboration across Europe.',
+
     // CTA Section
     'cta.title': 'Ready for the Next Tour?',
     'cta.subtitle': 'Join me on the road! Don\'t miss any of my ETS2 tours and follow Baron Performanze on TikTok!',
