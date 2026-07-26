@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-import { Box, Container, Typography, Paper, Chip } from '@mui/material';
-import { NewReleases } from '@mui/icons-material';
+import { Box, Container, Typography, Paper } from '@mui/material';
 import { useLanguage } from '../context/language-context';
 
 export function PartnersSection() {
@@ -22,20 +21,6 @@ export function PartnersSection() {
           transition={{ duration: 0.6 }}
         >
           <Box sx={{ textAlign: 'center', mb: 6 }}>
-            <Chip
-              icon={<NewReleases sx={{ color: '#dc2626 !important' }} />}
-              label={t('partners.newBadge')}
-              sx={{
-                bgcolor: 'rgba(220, 38, 38, 0.12)',
-                border: '1px solid rgba(220, 38, 38, 0.5)',
-                color: 'white',
-                fontWeight: 600,
-                mb: 2,
-                px: 1.5,
-                py: 2.5,
-                fontSize: '0.95rem',
-              }}
-            />
             <Typography
               variant="h2"
               sx={{
