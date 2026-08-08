@@ -6,6 +6,16 @@ import { useLanguage } from '../context/language-context';
 import Slider from 'react-slick';
 import { galleryImages } from '../data/gallery-images';
 
+const PARTICLES = Array.from({ length: 22 }, (_, i) => ({
+  id: i,
+  left: `${(i * 41 + 7) % 100}%`,
+  top: `${(i * 67 + 13) % 100}%`,
+  size: (i % 3) + 1.5,
+  duration: 7 + (i % 8),
+  delay: i * 0.28,
+  color: i % 4 === 0 ? 'rgba(220,38,38,0.7)' : 'rgba(255,255,255,0.25)',
+}));
+
 export function HeroSection() {
   const { t } = useLanguage();
   const scrollToContent = () => {
@@ -67,6 +77,26 @@ export function HeroSection() {
             pointerEvents: 'none',
           }}
         />
+
+        {/* Floating particles */}
+        <Box sx={{ position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none', overflow: 'hidden' }}>
+          {PARTICLES.map((p) => (
+            <motion.div
+              key={p.id}
+              style={{
+                position: 'absolute',
+                left: p.left,
+                top: p.top,
+                width: p.size,
+                height: p.size,
+                borderRadius: '50%',
+                backgroundColor: p.color,
+              }}
+              animate={{ y: [0, -24, 0], opacity: [0.15, 0.7, 0.15] }}
+              transition={{ duration: p.duration, delay: p.delay, repeat: Infinity, ease: 'easeInOut' }}
+            />
+          ))}
+        </Box>
       </Box>
 
       {/* Content */}

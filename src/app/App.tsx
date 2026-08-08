@@ -5,6 +5,7 @@ import { PartnersSection } from './components/partners-section';
 import { CTASection } from './components/cta-section';
 import { Footer } from './components/footer';
 import { LanguageSwitcher } from './components/language-switcher';
+import { ScrollProgress } from './components/scroll-progress';
 import { LanguageProvider } from './context/language-context';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import 'slick-carousel/slick/slick.css';
@@ -29,6 +30,7 @@ export default function App() {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <div style={{ minHeight: '100vh', backgroundColor: 'black' }}>
+          <ScrollProgress />
           <LanguageSwitcher />
           <HeroSection />
           <GallerySection />
