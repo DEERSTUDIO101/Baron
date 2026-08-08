@@ -44,7 +44,7 @@ export function PartnersSection() {
             </Typography>
           </Box>
 
-          {/* BP & ZT Group main card */}
+          {/* BP & ZT Group unified card */}
           <Paper
             elevation={0}
             sx={{
@@ -52,13 +52,13 @@ export function PartnersSection() {
               backdropFilter: 'blur(10px)',
               border: '1px solid rgba(63, 63, 70, 1)',
               borderRadius: 3,
-              p: { xs: 3, md: 5 },
+              p: { xs: 3, md: 4 },
               maxWidth: '900px',
               mx: 'auto',
               textAlign: 'center',
-              mb: 6,
             }}
           >
+            {/* Main BP & ZT image */}
             <Box
               component="img"
               src="/bp-zt-partnership.png"
@@ -70,115 +70,72 @@ export function PartnersSection() {
                 mb: 3,
               }}
             />
+
             <Typography
               variant="h5"
-              sx={{
-                color: 'white',
-                fontWeight: 'bold',
-                mb: 1.5,
-              }}
+              sx={{ color: 'white', fontWeight: 'bold', mb: 1.5 }}
             >
               BP <Box component="span" sx={{ color: '#dc2626' }}>&</Box> ZT Group
             </Typography>
             <Typography
               variant="body1"
-              sx={{
-                color: '#9ca3af',
-              }}
+              sx={{ color: '#9ca3af', mb: 3 }}
             >
               {t('partners.description')}
             </Typography>
-          </Paper>
 
-          {/* Zehl Transporte extra section */}
-          <Box sx={{ maxWidth: '900px', mx: 'auto' }}>
-            <Typography
-              variant="overline"
+            {/* Zehl Transporte images inside same card */}
+            <Box
               sx={{
-                color: '#dc2626',
-                fontWeight: 700,
-                letterSpacing: '0.15em',
-                fontSize: '0.8rem',
-                display: 'block',
-                textAlign: 'center',
-                mb: 1,
+                pt: 3,
+                borderTop: '1px solid rgba(63, 63, 70, 0.8)',
               }}
             >
-              Zehl Transporte
-            </Typography>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ y: -4 }}
-                >
+              <Typography
+                variant="overline"
+                sx={{
+                  color: '#dc2626',
+                  fontWeight: 700,
+                  letterSpacing: '0.15em',
+                  fontSize: '0.75rem',
+                  display: 'block',
+                  mb: 2,
+                }}
+              >
+                Zehl Transporte
+              </Typography>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
                   <Box
+                    component="img"
+                    src="/bp-zh-1.jpg"
+                    alt="BP & ZT Group – Zehl Transporte Fleet"
                     sx={{
-                      borderRadius: 3,
-                      overflow: 'hidden',
-                      border: '1px solid rgba(220, 38, 38, 0.3)',
-                      boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
-                      transition: 'all 0.3s ease',
-                      '&:hover': {
-                        borderColor: '#dc2626',
-                        boxShadow: '0 16px 50px rgba(220, 38, 38, 0.2)',
-                      },
+                      width: '100%',
+                      height: { xs: '160px', sm: '200px' },
+                      objectFit: 'cover',
+                      borderRadius: 2,
+                      display: 'block',
                     }}
-                  >
-                    <Box
-                      component="img"
-                      src="/bp-zh-1.jpg"
-                      alt="BP & ZT Group – Zehl Transporte Fleet"
-                      sx={{
-                        width: '100%',
-                        height: { xs: '180px', sm: '220px' },
-                        objectFit: 'cover',
-                        display: 'block',
-                      }}
-                    />
-                  </Box>
-                </motion.div>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  whileHover={{ y: -4 }}
-                >
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
                   <Box
+                    component="img"
+                    src="/bp-zh-2.jpg"
+                    alt="BP & ZT Group – Zehl Transporte"
                     sx={{
-                      borderRadius: 3,
-                      overflow: 'hidden',
-                      border: '1px solid rgba(220, 38, 38, 0.3)',
-                      boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
-                      transition: 'all 0.3s ease',
-                      '&:hover': {
-                        borderColor: '#dc2626',
-                        boxShadow: '0 16px 50px rgba(220, 38, 38, 0.2)',
-                      },
+                      width: '100%',
+                      height: { xs: '160px', sm: '200px' },
+                      objectFit: 'cover',
+                      borderRadius: 2,
+                      display: 'block',
                     }}
-                  >
-                    <Box
-                      component="img"
-                      src="/bp-zh-2.jpg"
-                      alt="BP & ZT Group – Zehl Transporte"
-                      sx={{
-                        width: '100%',
-                        height: { xs: '180px', sm: '220px' },
-                        objectFit: 'cover',
-                        display: 'block',
-                      }}
-                    />
-                  </Box>
-                </motion.div>
+                  />
+                </Grid>
               </Grid>
-            </Grid>
-          </Box>
+            </Box>
+          </Paper>
         </motion.div>
       </Container>
     </Box>
