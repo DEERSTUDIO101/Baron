@@ -71,7 +71,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Grid item xs={12} sm={6} lg={3} key={index}>
+              <Grid item xs={6} sm={6} lg={3} key={index}>
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}

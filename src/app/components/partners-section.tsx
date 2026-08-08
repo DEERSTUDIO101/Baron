@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Box, Container, Typography, Paper } from '@mui/material';
+import { Box, Container, Typography, Paper, Grid } from '@mui/material';
 import { useLanguage } from '../context/language-context';
 
 export function PartnersSection() {
@@ -44,6 +44,7 @@ export function PartnersSection() {
             </Typography>
           </Box>
 
+          {/* BP & ZT Group main card */}
           <Paper
             elevation={0}
             sx={{
@@ -55,6 +56,7 @@ export function PartnersSection() {
               maxWidth: '900px',
               mx: 'auto',
               textAlign: 'center',
+              mb: 6,
             }}
           >
             <Box
@@ -87,6 +89,96 @@ export function PartnersSection() {
               {t('partners.description')}
             </Typography>
           </Paper>
+
+          {/* Zehl Transporte extra section */}
+          <Box sx={{ maxWidth: '900px', mx: 'auto' }}>
+            <Typography
+              variant="overline"
+              sx={{
+                color: '#dc2626',
+                fontWeight: 700,
+                letterSpacing: '0.15em',
+                fontSize: '0.8rem',
+                display: 'block',
+                textAlign: 'center',
+                mb: 1,
+              }}
+            >
+              Zehl Transporte
+            </Typography>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6}>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ y: -4 }}
+                >
+                  <Box
+                    sx={{
+                      borderRadius: 3,
+                      overflow: 'hidden',
+                      border: '1px solid rgba(220, 38, 38, 0.3)',
+                      boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
+                      transition: 'all 0.3s ease',
+                      '&:hover': {
+                        borderColor: '#dc2626',
+                        boxShadow: '0 16px 50px rgba(220, 38, 38, 0.2)',
+                      },
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src="/bp-zh-1.jpg"
+                      alt="BP & ZT Group – Zehl Transporte Fleet"
+                      sx={{
+                        width: '100%',
+                        height: { xs: '180px', sm: '220px' },
+                        objectFit: 'cover',
+                        display: 'block',
+                      }}
+                    />
+                  </Box>
+                </motion.div>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  whileHover={{ y: -4 }}
+                >
+                  <Box
+                    sx={{
+                      borderRadius: 3,
+                      overflow: 'hidden',
+                      border: '1px solid rgba(220, 38, 38, 0.3)',
+                      boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
+                      transition: 'all 0.3s ease',
+                      '&:hover': {
+                        borderColor: '#dc2626',
+                        boxShadow: '0 16px 50px rgba(220, 38, 38, 0.2)',
+                      },
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src="/bp-zh-2.jpg"
+                      alt="BP & ZT Group – Zehl Transporte"
+                      sx={{
+                        width: '100%',
+                        height: { xs: '180px', sm: '220px' },
+                        objectFit: 'cover',
+                        display: 'block',
+                      }}
+                    />
+                  </Box>
+                </motion.div>
+              </Grid>
+            </Grid>
+          </Box>
         </motion.div>
       </Container>
     </Box>
