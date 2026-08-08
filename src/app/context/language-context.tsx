@@ -35,19 +35,24 @@ const translations = {
     'features.title': 'Warum Baron Performanze?',
     'features.subtitle': 'Mehr als nur Truck-Simulator - eine Leidenschaft für die Straße',
     'features.realistic.title': 'Realistische Touren',
-    'features.realistic.desc': 'Authentische Frachten quer durch Europa mit realistischer Simulation',
+    'features.realistic.desc': 'Durch unser Fleet System Trucky und Trucksbook halten wir einen ordentlichen Überblick über die Aufträge.',
     'features.routes.title': 'Spannende Routen',
-    'features.routes.desc': 'Von Skandinavien bis Italien - entdecke die schönsten Strecken',
-    'features.content.title': 'Täglicher Content',
-    'features.content.desc': 'Regelmäßige Videos und Highlights von meinen Trucking-Abenteuern',
+    'features.routes.desc': 'Von Skandinavien bis Italien auf der Standard Karte oder auch im 1 zu 1 Maßstab auf der RPM Karte.',
+    'features.content.title': 'Content',
+    'features.content.desc': 'Regelmäßige Videos und Highlights mit Hilfe von Bildern der Fahrer.',
     'features.skill.title': 'Skill & Präzision',
-    'features.skill.desc': 'Perfekte Manöver, enge Kurven und meisterhafte Parkjobs',
+    'features.skill.desc': 'Besondere Angebote wie ADR, Gigaliner, Tiefbett, Tieflader und noch so einiges mehr.',
 
     // Partners Section
     'partners.newBadge': 'Neue Partnerschaft',
     'partners.title': 'Unsere Partnerschaft',
-    'partners.subtitle': 'Gemeinsam stärker auf der Straße',
-    'partners.description': 'Baron Performanze und Zehl Transporte gehen gemeinsame Wege - als BP & ZT Group liefern wir noch mehr spannende Touren, Content und Zusammenarbeit quer durch Europa.',
+    'partners.subtitle': 'Doppelte Stärke, ein gemeinsames Ziel.',
+    'partners.description': 'Mit unserem Partner Zehl Transporte haben wir die BP & ZT Group gegründet um noch flexibler zu sein und einen gemeinsam größeren Kundenstamm abzudecken.',
+
+    // Zehl Transporte Section
+    'zehl.title': 'Zehl Transporte',
+    'zehl.subtitle': 'Unser Partner auf der Straße',
+    'zehl.description': 'Mit unserem Partner Zehl Transporte haben wir die BP & ZT Group gegründet um noch flexibler zu sein und einen gemeinsam größeren Kundenstamm abzudecken.',
 
     // CTA Section
     'cta.title': 'Bereit für die nächste Tour?',
@@ -85,19 +90,24 @@ const translations = {
     'features.title': 'Why Baron Performanze?',
     'features.subtitle': 'More than just a truck simulator - a passion for the road',
     'features.realistic.title': 'Realistic Tours',
-    'features.realistic.desc': 'Authentic cargo across Europe with realistic simulation',
+    'features.realistic.desc': 'With our fleet system Trucky and Trucksbook we maintain a clear overview of all orders.',
     'features.routes.title': 'Exciting Routes',
-    'features.routes.desc': 'From Scandinavia to Italy - discover the most beautiful routes',
-    'features.content.title': 'Daily Content',
-    'features.content.desc': 'Regular videos and highlights from my trucking adventures',
+    'features.routes.desc': 'From Scandinavia to Italy on the standard map or even 1:1 scale on the RPM map.',
+    'features.content.title': 'Content',
+    'features.content.desc': 'Regular videos and highlights with the help of pictures from our drivers.',
     'features.skill.title': 'Skill & Precision',
-    'features.skill.desc': 'Perfect maneuvers, tight turns and masterful parking jobs',
+    'features.skill.desc': 'Special loads like ADR, Gigaliner, lowbed, low loader and much more.',
 
     // Partners Section
     'partners.newBadge': 'New Partnership',
     'partners.title': 'Our Partnership',
-    'partners.subtitle': 'Stronger together on the road',
-    'partners.description': 'Baron Performanze and Zehl Transporte are joining forces - as BP & ZT Group we deliver even more exciting tours, content and collaboration across Europe.',
+    'partners.subtitle': 'Double strength, one common goal.',
+    'partners.description': 'Together with our partner Zehl Transporte we founded the BP & ZT Group to be even more flexible and cover a jointly larger customer base.',
+
+    // Zehl Transporte Section
+    'zehl.title': 'Zehl Transporte',
+    'zehl.subtitle': 'Our partner on the road',
+    'zehl.description': 'Together with our partner Zehl Transporte we founded the BP & ZT Group to be even more flexible and cover a jointly larger customer base.',
 
     // CTA Section
     'cta.title': 'Ready for the Next Tour?',
