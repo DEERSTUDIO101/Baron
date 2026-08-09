@@ -44,7 +44,6 @@ export function PartnersSection() {
             </Typography>
           </Box>
 
-          {/* BP & ZT Group unified card */}
           <Paper
             elevation={0}
             sx={{
@@ -58,80 +57,49 @@ export function PartnersSection() {
               textAlign: 'center',
             }}
           >
+            {/* ── Zehl Transporte ── */}
             <Typography
               variant="overline"
-              sx={{
-                color: '#dc2626',
-                fontWeight: 700,
-                letterSpacing: '0.15em',
-                fontSize: '0.75rem',
-                display: 'block',
-                mb: 2,
-              }}
+              sx={{ color: '#dc2626', fontWeight: 700, letterSpacing: '0.15em', fontSize: '0.75rem', display: 'block', mb: 2 }}
             >
-              ZEHL TRANSPORTE
+              Zehl Transporte
             </Typography>
 
-            {/* Main Zehl Transporte image */}
             <Box
               component="img"
-              src="/bp-zh-1.jpg"
-              alt="BP & ZT Group – Zehl Transporte Fleet"
-              sx={{
-                width: '100%',
-                maxWidth: '500px',
-                borderRadius: 2,
-                mb: 3,
-              }}
+              src="/bp-zh-3.png"
+              alt="Zehl Transporte – Scania vor dem Depot"
+              sx={{ width: '100%', borderRadius: 2, mb: 3, display: 'block' }}
             />
 
-            <Typography
-              variant="h5"
-              sx={{ color: 'white', fontWeight: 'bold', mb: 1.5 }}
-            >
-              BP <Box component="span" sx={{ color: '#dc2626' }}>&</Box> ZT Group
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ color: '#9ca3af', mb: 3 }}
-            >
+            <Typography variant="body1" sx={{ color: '#9ca3af', mb: 3 }}>
               {t('partners.description')}
             </Typography>
 
-            {/* BP & ZT Group images inside same card */}
-            <Box
-              sx={{
-                pt: 3,
-                borderTop: '1px solid rgba(63, 63, 70, 0.8)',
-              }}
-            >
+            {/* ── BP & ZT Group ── */}
+            <Box sx={{ pt: 3, borderTop: '1px solid rgba(63, 63, 70, 0.8)' }}>
+              <Typography
+                variant="h5"
+                sx={{ color: 'white', fontWeight: 'bold', mb: 2.5 }}
+              >
+                BP <Box component="span" sx={{ color: '#dc2626' }}>&</Box> ZT Group
+              </Typography>
+
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <Box
                     component="img"
-                    src="/bp-zh-3.jpg"
+                    src="/bp-zt-partnership.png"
                     alt="BP & ZT Group"
-                    sx={{
-                      width: '100%',
-                      height: { xs: '160px', sm: '200px' },
-                      objectFit: 'cover',
-                      borderRadius: 2,
-                      display: 'block',
-                    }}
+                    sx={{ width: '100%', height: { xs: '160px', sm: '200px' }, objectFit: 'cover', borderRadius: 2, display: 'block' }}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Box
                     component="img"
                     src="/bp-zh-2.jpg"
-                    alt="BP & ZT Group"
-                    sx={{
-                      width: '100%',
-                      height: { xs: '160px', sm: '200px' },
-                      objectFit: 'cover',
-                      borderRadius: 2,
-                      display: 'block',
-                    }}
+                    alt="BP & ZT Group – MAN"
+                    sx={{ width: '100%', height: { xs: '160px', sm: '200px' }, objectFit: 'cover', borderRadius: 2, display: 'block' }}
                   />
                 </Grid>
               </Grid>
