@@ -58,11 +58,25 @@ export function PartnersSection() {
               textAlign: 'center',
             }}
           >
-            {/* Main BP & ZT image */}
+            <Typography
+              variant="overline"
+              sx={{
+                color: '#dc2626',
+                fontWeight: 700,
+                letterSpacing: '0.15em',
+                fontSize: '0.75rem',
+                display: 'block',
+                mb: 2,
+              }}
+            >
+              ZEHL TRANSPORTE
+            </Typography>
+
+            {/* Main Zehl Transporte image */}
             <Box
               component="img"
-              src="/bp-zt-partnership.png"
-              alt="BP & ZT Group - Baron Performanze x Zehl Transporte"
+              src="/bp-zh-1.jpg"
+              alt="BP & ZT Group – Zehl Transporte Fleet"
               sx={{
                 width: '100%',
                 maxWidth: '500px',
@@ -84,32 +98,19 @@ export function PartnersSection() {
               {t('partners.description')}
             </Typography>
 
-            {/* Zehl Transporte images inside same card */}
+            {/* BP & ZT Group images inside same card */}
             <Box
               sx={{
                 pt: 3,
                 borderTop: '1px solid rgba(63, 63, 70, 0.8)',
               }}
             >
-              <Typography
-                variant="overline"
-                sx={{
-                  color: '#dc2626',
-                  fontWeight: 700,
-                  letterSpacing: '0.15em',
-                  fontSize: '0.75rem',
-                  display: 'block',
-                  mb: 2,
-                }}
-              >
-                Zehl Transporte
-              </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <Box
                     component="img"
-                    src="/bp-zh-1.jpg"
-                    alt="BP & ZT Group – Zehl Transporte Fleet"
+                    src="/bp-zh-3.jpg"
+                    alt="BP & ZT Group"
                     sx={{
                       width: '100%',
                       height: { xs: '160px', sm: '200px' },
@@ -123,7 +124,7 @@ export function PartnersSection() {
                   <Box
                     component="img"
                     src="/bp-zh-2.jpg"
-                    alt="BP & ZT Group – Zehl Transporte"
+                    alt="BP & ZT Group"
                     sx={{
                       width: '100%',
                       height: { xs: '160px', sm: '200px' },
