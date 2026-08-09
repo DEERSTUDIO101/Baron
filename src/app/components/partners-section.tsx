@@ -85,7 +85,7 @@ export function PartnersSection() {
                 BP <Box component="span" sx={{ color: '#dc2626' }}>&</Box> ZT Group
               </Typography>
 
-              <Grid container spacing={2}>
+              <Grid container spacing={2} justifyContent="center">
                 <Grid item xs={12} sm={6}>
                   <Box
                     component="img"
